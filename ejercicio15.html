@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Operaciones con Objetos</title>
+    <script src="js/ejercicio15.js" defer></script>
+</head>
+<body>
+    <h1>Registro y Operaciones con Estudiantes</h1>
+    
+    <fieldset>
+        <legend>Agregar Estudiante</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej. Juan">
+        
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100">
+        
+        <button onclick="agregarEstudiante()">Agregar estudiante</button>
+    </fieldset>
+
+    <br>
+    <h3>Estudiantes agregados:</h3>
+    <ul id="listaEstudiantes"><i>Ninguno todavía</i></ul>
+
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    
+    <label for="promedio">Calificación promedio:</label>
+    <input type="text" id="resultadoPromedio" readonly placeholder="Esperando cálculo..."> 
+    <br><br>
+    
+    <label for="maxima">Calificación más alta:</label> 
+    <input type="text" id="resultadoMax" readonly placeholder="Esperando cálculo..."> 
+    <br><br>
+    
+    <label for="minima">Calificación más baja:</label>
+    <input type="text" id="resultadoMin" readonly placeholder="Esperando cálculo..."> 
+
+    <div id="mensajeError" style="color: red; margin-top: 10px;"></div>
+</body>
+</html>
